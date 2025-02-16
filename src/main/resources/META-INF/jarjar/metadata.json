@@ -1,0 +1,16 @@
+{
+  "jars": [
+    {
+      "identifier": {
+        "group": "dev.ferriarnus.monocle",
+        "artifact": "Monocle"
+      },
+      "version": {
+        "range": "[${mod_version}]",
+        "artifactVersion": "${mod_version}"
+      },
+      "path": "META-INF/jarjar/monocle-mod-file.jar",
+      "isObfuscated": false
+    }
+  ]
+}
