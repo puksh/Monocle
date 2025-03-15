@@ -67,7 +67,7 @@ public class TransformPatcherMixin {
                             break;
                         default:
                             if (parameters.patch == EmbeddiumPatch.EMBEDDIUM) {
-                                EmbeddiumParameters embeddiumParameters = (EmbeddiumParameters) parameters;
+                                EmbeddiumParameters embeddiumParameters = null; //(EmbeddiumParameters) parameters;
                                 EmbeddiumCoreTransformer.transform(transformer, tree, root, embeddiumParameters);
                             } else {
                                 throw new UnsupportedOperationException("Unknown patch type: " + parameters.patch);
@@ -103,7 +103,7 @@ public class TransformPatcherMixin {
                             break;
                         default:
                             if (parameters.patch == EmbeddiumPatch.EMBEDDIUM) {
-                                EmbeddiumParameters embeddiumParameters = (EmbeddiumParameters) parameters;
+                                EmbeddiumParameters embeddiumParameters = null; //(EmbeddiumParameters) parameters;
                                 EmbeddiumTransformer.transform(transformer, tree, root, embeddiumParameters);
                             } else {
                                 throw new UnsupportedOperationException("Unknown patch type: " + parameters.patch);

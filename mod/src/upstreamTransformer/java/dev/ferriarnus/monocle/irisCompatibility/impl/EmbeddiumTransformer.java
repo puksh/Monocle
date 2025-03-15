@@ -22,7 +22,7 @@ public class EmbeddiumTransformer {
 		TranslationUnit tree,
 		Root root,
 		EmbeddiumParameters parameters) {
-		CommonTransformer.transform(t, tree, root, parameters, false);
+		//CommonTransformer.transform(t, tree, root, parameters, false);
 
 		replaceMidTexCoord(t, tree, root, 1.0f / 32768.0f);
 
@@ -42,7 +42,7 @@ public class EmbeddiumTransformer {
 			root.replaceReferenceExpressions(t, "gl_MultiTexCoord1",
 					"vec4(_vert_tex_light_coord, 0.0, 1.0)");
 
-			CommonTransformer.patchMultiTexCoord3(t, tree, root, parameters);
+			//CommonTransformer.patchMultiTexCoord3(t, tree, root, parameters);
 
 			// gl_MultiTexCoord0 and gl_MultiTexCoord1 are the only valid inputs (with
 			// gl_MultiTexCoord2 and gl_MultiTexCoord3 as aliases), other texture
