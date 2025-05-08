@@ -32,6 +32,14 @@
 
     "shaderchanges.MixinIEGLShaders",
 
+    "shaderchanges.MixinBaseCapabilityPointRenderer",
+    "shaderchanges.MixinBaseEssencePointRenderer",
+
+    "shaderchanges.MixinShatteredRelayRenderer",
+    "shaderchanges.MixinShatterRenderer",
+    "shaderchanges.MixinShatterZapRenderer",
+    "shaderchanges.MixinShatteredFocusRenderer",
+
     "altshaders.ShaderAccessMixin",
 
     "altshaders.MixinXYShaders",

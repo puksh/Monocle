@@ -239,6 +239,14 @@ dependencies {
 
     runtimeOnly("curse.maven:modular-routers-250294:5937500")
 
+    compileOnly("curse.maven:data-essence-1189360:6508079")
+    runtimeOnly("curse.maven:data-essence-1189360:6508079")
+    runtimeOnly("curse.maven:databank-1181408:6508070")
+
+    compileOnly("curse.maven:runology-988198:6126814")
+    runtimeOnly("curse.maven:runology-988198:6126814")
+    runtimeOnly("curse.maven:modonomicon-538392:6338537")
+
     //runtimeOnly("curse.maven:touhou-little-maid-355044:5896992") crashes due to missing sodium class
 
     runtimeOnly("curse.maven:jei-238222:5846880")
