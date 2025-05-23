@@ -16,6 +16,8 @@
     "IrisRenderingPipelineMixin",
     "MixinProgramDirectives",
 
+    "MixinIrisConfig",
+
     "MixinLevelRenderer",
     "MixinGameRenderer",
     "MixinSegmentedBufferBuilder",

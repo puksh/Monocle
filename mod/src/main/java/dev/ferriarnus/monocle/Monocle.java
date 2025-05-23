@@ -28,10 +28,12 @@ public class Monocle {
 
     private static final Properties CONFIG = new Properties();
     public static final Path CONFIG_PATH = FMLPaths.CONFIGDIR.get().resolve("monocle.properties");
+    public static final Path OVERRIDE_PATH = FMLPaths.CONFIGDIR.get().resolve("monocle.override");
     private static boolean ALLOW_FULL_FORMAT = false;
     private static boolean MOVE_LAST = false;
     private static boolean END_BATCH = false;
     private static boolean NO_SHADOW_STAGE = false;
+    private static boolean OVERRIDE = false;
     public static final String FALSE = "false";
     private static final String[] MODS = new String[]{
             "justdirethings",
@@ -83,7 +85,14 @@ public class Monocle {
         return NO_SHADOW_STAGE;
     }
 
+    public static boolean shouldOverride() {
+        return OVERRIDE;
+    }
+
     public static Properties loadConfig() throws IOException {
+        if (Files.exists(OVERRIDE_PATH)) {
+            OVERRIDE = true;
+        }
         if (!Files.exists(Monocle.CONFIG_PATH)) {
             makeConfig();
         }
