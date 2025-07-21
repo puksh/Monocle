@@ -1,6 +1,5 @@
 
 # Monocle
-=======
 
 An Iris addon for neoforge that allows Iris to work with Embeddium.
 
@@ -10,3 +9,5 @@ An Iris addon for neoforge that allows Iris to work with Embeddium.
 
 # Form Repo diff:
 - GitHub Actions - updated to not use depracated functionality
+
+Tested on ATM10 4.2 with Distant Horizons installed - no issues found
