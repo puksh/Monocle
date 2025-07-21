@@ -151,7 +151,7 @@ dependencies {
         print "Iris jar not found in libs. Iris will not be available in dev runs."
     }
 
-    implementation("org.embeddedt:embeddium-1.21:${embeddium_version}")
+    implementation("org.embeddedt:embeddium-1.21.1:${embeddium_version}")
 
     compileOnly("mekanism:Mekanism:1.21.1-10.7.0.55")
     runtimeOnly("mekanism:Mekanism:1.21.1-10.7.0.55")
